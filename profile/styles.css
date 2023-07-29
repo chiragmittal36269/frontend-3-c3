@@ -9,6 +9,10 @@
 
 body {
 	background-color: #f8fafc;
+	background-image: url("../images/profile-bg.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
 }
 
 #outer-div {
