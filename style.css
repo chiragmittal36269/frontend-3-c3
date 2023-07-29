@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Mulish", sans-serif;
+}
+
+body {
+	background-color: #f8fafc;
+}
+
+.outer-div {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.inner-div {
+	min-width: 250px;
+	box-shadow: 0px 6px 8px 0px #0000000d;
+	background-color: #ffffff;
+	min-height: 400px;
+	padding: 30px 30px 10px 30px;
+	border-radius: 5px;
+}
+
+.inner-div .welcome {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #757575;
+}
+
+.inner-div .account {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #333333;
+	margin-top: 10px;
+}
+
+form {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+input {
+	width: 100%;
+	height: 25px;
+	border-radius: 5px;
+	border: 1px solid #dedede;
+	margin-top: 2px;
+	padding-left: 5px;
+}
+
+#continue {
+	background: linear-gradient(180deg, #625bf7 0%, #463eea 100%);
+	color: white;
+	height: 40px;
+	border-radius: 6px;
+	border: none;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 18px;
+	letter-spacing: 0em;
+}
+
+#mandatory {
+	color: #625bf7;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 23px;
+	letter-spacing: 0em;
+	text-align: center;
+	margin-top: 10px;
+	visibility: hidden;
+}
+
+.signUp {
+	font-family: Mulish;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+	letter-spacing: 0em;
+	text-align: center;
+	margin-top: 25px;
+	color: #333333;
+}
+
+.signUp #signUpBtn {
+	color: #625bf7;
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.inner-div {
+		min-width: 360px;
+		min-height: 450px;
+	}
+
+	.inner-div .welcome {
+		font-size: 16px;
+	}
+
+	.inner-div .account {
+		font-size: 20px;
+	}
+
+	#continue {
+		margin-top: 15px;
+	}
+
+	.mandatory {
+		font-size: 16px;
+		margin-top: 15px;
+	}
+
+	.signUp {
+		font-size: 15px;
+	}
+
+	input {
+		height: 30px;
+	}
+}

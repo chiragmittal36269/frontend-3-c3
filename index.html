@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="outer-div">
+			<div class="inner-div">
+				<p class="welcome">Welcome back! 👋</p>
+				<h3 class="account">Sign up to your account</h3>
+				<form action="">
+					<div>
+						<label for="name">Your name</label><br />
+						<input type="text" id="name" onclick="onClick()"/>
+					</div>
+					<div>
+						<label for="email">Your email</label><br />
+						<input type="email" id="email" onclick="onClick()"/>
+					</div>
+					<div>
+						<label for="password">Password</label><br />
+						<input type="password" name="" id="password" onclick="onClick()"/>
+					</div>
+					<div>
+						<label for="confirmPassword">Confirm Password</label>
+						<br />
+						<input type="password" name="" id="confirmPassword" onclick="onClick()"/>
+					</div>
+
+					<button type="submit" id="continue">Continue</button>
+				</form>
+
+				<p id="mandatory">Error: All fields are mandatory!</p>
+			</div>
+			<p class="signUp">
+				Don't have an account? <a href="#" id="signUpBtn">Sign up</a>
+			</p>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
